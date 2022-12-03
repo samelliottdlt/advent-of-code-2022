@@ -1,6 +1,3 @@
-// Ex: npm start 1
-// will run the index.ts file in the 1 folder
-
 import path from "path";
 
 const args = process.argv.slice(2);
