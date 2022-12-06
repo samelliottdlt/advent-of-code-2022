@@ -15,24 +15,22 @@ function calculateIntersection(a: Set<string>, b: Set<string>) {
   return intersection;
 }
 
-export default function(input = siteInput) {
-  const lines = input
-    .split("\n");
+export default function (input = siteInput) {
+  const lines = input.split("\n");
 
   const groups: Array<Array<string>> = [[]];
   for (const line of lines) {
     const last = groups[groups.length - 1];
     if (last.length < 3) {
       last.push(line);
-    }
-    else {
+    } else {
       groups.push([line]);
     }
   }
 
   let sum = 0;
   for (const group of groups) {
-    const sets = group.map(g => new Set(g));
+    const sets = group.map((g) => new Set(g));
     const intersection = calculateIntersectionNSets(...sets);
     const priority = calculatePriority([...intersection].join(""));
     sum += priority;

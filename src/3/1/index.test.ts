@@ -15,10 +15,10 @@ test("test input", () => {
 });
 
 test("priority calculation", () => {
-  assert.equal(calculatePriority('p'), 16);
-  assert.equal(calculatePriority('L'), 38);
-  assert.equal(calculatePriority('P'), 42);
-  assert.equal(calculatePriority('v'), 22);
-  assert.equal(calculatePriority('t'), 20);
-  assert.equal(calculatePriority('s'), 19);
+  assert.equal(calculatePriority("p"), 16);
+  assert.equal(calculatePriority("L"), 38);
+  assert.equal(calculatePriority("P"), 42);
+  assert.equal(calculatePriority("v"), 22);
+  assert.equal(calculatePriority("t"), 20);
+  assert.equal(calculatePriority("s"), 19);
 });

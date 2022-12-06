@@ -1,6 +1,6 @@
-import { test } from '@jest/globals';
-import assert from 'assert';
-import fun from './';
+import { test } from "@jest/globals";
+import assert from "assert";
+import fun from "./";
 
 const input = `vJrwpWtwJgWrhcsFMMfFFhFp
 jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
@@ -9,7 +9,7 @@ wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
 ttgJtRGJQctTZtZT
 CrZsJsPPZsGzwwsLwLmpwMDw`;
 
-test('test input', () => {
+test("test input", () => {
   const result = fun(input);
   assert.equal(result, 70);
 });
